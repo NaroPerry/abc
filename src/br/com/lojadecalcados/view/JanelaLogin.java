@@ -107,18 +107,18 @@ public class JanelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntrarActionPerformed
-//        FuncionarioDAOImplements fi = new FuncionarioDAOImplements();
-//        if (fi.procurarLogin(txLoginAutentica.getText(), txSenhaAutentica.getText()) == true) {
+        FuncionarioDAOImplements fi = new FuncionarioDAOImplements();
+        if (fi.procurarLogin(txLoginAutentica.getText(), txSenhaAutentica.getText()) == true) {
            JanelaPrincipal jp = new JanelaPrincipal();
            jp.setLocationRelativeTo(null);
            jp.setVisible(true);
-//            dispose();
-//        } else {
-//            JOptionPane.showMessageDialog(null, "Login ou senha incorreto, tente novamente");
-//            txLoginAutentica.setText("");
-//            txSenhaAutentica.setText("");
-//            txLoginAutentica.grabFocus();
-//        }
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Login ou senha incorreto, tente novamente");
+            txLoginAutentica.setText("");
+            txSenhaAutentica.setText("");
+            txLoginAutentica.grabFocus();
+        }
 
 
 
