@@ -120,8 +120,6 @@ public class JanelaLogin extends javax.swing.JFrame {
             txLoginAutentica.grabFocus();
         }
 
-
-
     }//GEN-LAST:event_btEntrarActionPerformed
 
     private void btSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSairActionPerformed
